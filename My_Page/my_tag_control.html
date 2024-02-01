@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+    <head>
+        <title>My page</title>
+        <meta charset="utf-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="LinkColor.js"></script>
+        <script>
+            function TAG() {
+                document.querySelector('#tag1').type="passward";
+                document.querySelector('#tag2').type="number";
+                document.querySelector('#tag3').type="date";
+                document.querySelector('#tag4').type="color";
+                document.querySelector('#tag5').type="checkbox";
+                document.querySelector('#tag6').type="button";
+                document.querySelector('#tag6').value="tag6";
+            }
+            function reset() {
+                document.querySelector('#tag1').type="button";
+                document.querySelector('#tag1').value="tag1";
+                document.querySelector('#tag2').type="checkbox";
+                document.querySelector('#tag3').type="color";
+                document.querySelector('#tag4').type="date";
+                document.querySelector('#tag5').type="number";
+                document.querySelector('#tag6').type="passward";
+            }
+        </script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <h1><a href="my_page.html">Life_Coding JavaScript</a></h1>
+        <input type="button" value="night" onclick="NightDayHanddler(this)">
+        <div id="grid">
+        <ol>
+            <li><a href="my_onclick.html">onclick</a></li>
+            <li><a href="my_variable.html">variable</a></li>
+            <li><a href="my_tag_control.html">tag control</a></li>
+            <li><a href="my_if.html">if</a></li>
+            <li><a href="my_array_for.html">array, for</a></li>
+            <li><a href="my_function.html">funciton</a></li>
+            <li><a href="my_class.html">class</a></li>
+        </ol>
+        <div id="article">
+        <h2>tag control</h2>
+        <p>
+            <input id="TAG" type="button" value="태그 바꾸기!" onclick="TAG()">
+            <input id="reset" type="button" value="처음 상태로 되돌리기!" onclick="reset()"><br>
+            태그1 버튼 : <input id="tag1" type="button" value="tag1"><br>
+            태그2 채크 박스 : <input id="tag2" type="checkbox"><br>
+            태그3 컬러 : <input id="tag3" type="color"><br>
+            태그4 날짜 : <input id="tag4" type="date"><br>
+            태그5 숫자 : <input id="tag5" type="number"><br>
+            태그6 패스워드 : <input id="tag6" type="password"><br>
+        </p>
+        </div>
+        </div>
+        <input type="button" value="night" onclick="NightDayHanddler(this)">
+    </body>
+</html>

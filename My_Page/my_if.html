@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+    <head>
+        <title>My page</title>
+        <meta charset="utf-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="LinkColor.js"></script>
+        <script>
+            var number = 0;
+            var product = {
+                one:function() {
+                    number++;
+                    document.querySelector('#result').value = number;
+                },
+                five:function() {
+                    number += 5;
+                    document.querySelector('#result').value = number;
+                },
+                ten:function() { 
+                    number += 10;
+                    document.querySelector('#result').value = number;
+                },
+                zero:function() {
+                    number = 0;
+                    document.querySelector('#result').value = number;
+                    document.querySelector('#tag_if').value = "number가 21보다 큰 값 인가요?";
+                }
+            }
+            function _if() {
+                if(number > 21) document.querySelector('#tag_if').value="네. number는 21보다 큰 값입니다."
+                else if(number == 21) document.querySelector('#tag_if').value="아니오. number는 21과 같은 값입니다."
+                else if(number < 21) document.querySelector('#tag_if').value="아니오. number는 21보다 작은 값입니다."
+            }
+        </script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <h1><a href="my_page.html">Life_Coding JavaScript</a></h1>
+        <input type="button" value="night" onclick="NightDayHanddler(this)">
+        <div id="grid">
+        <ol>
+            <li><a href="my_onclick.html">onclick</a></li>
+            <li><a href="my_variable.html">variable</a></li>
+            <li><a href="my_tag_control.html">tag control</a></li>
+            <li><a href="my_if.html">if</a></li>
+            <li><a href="my_array_for.html">array, for</a></li>
+            <li><a href="my_function.html">funciton</a></li>
+            <li><a href="my_class.html">class</a></li>
+        </ol>
+        <div id="article">
+        <h2>if</h2>
+        <p>
+            버튼을 클릭하면 number가 증가합니다.<br>
+            <input type="button" value="+1" onclick="product.one()">
+            <input type="button" value="+5" onclick="product.five()">
+            <input type="button" value="+10" onclick="product.ten()">
+            <br>
+            number의 값 : <input id="result" type="button" value="0"><br>
+            <input id="tag_if" type="button" value="number가 21보다 큰 값 인가요?" onclick="_if()"><br>
+            <input type="button" value="초기화" onclick="product.zero()">
+        </p>
+        </div>
+        </div>
+        <input type="button" value="night" onclick="NightDayHanddler(this)">
+    </body>
+</html>

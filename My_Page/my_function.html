@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+    <head>
+        <title>My page</title>
+        <meta charset="utf-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="LinkColor.js"></script>
+        <script>
+            function myFunction(p1, p2)
+            {
+                var num = p1 * p2;
+                document.getElementById("p_id").innerText=num;
+            }
+        </script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <h1><a href="my_page.html">Life_Coding JavaScript</a></h1>
+        <input type="button" value="night" onclick="NightDayHanddler(this)">
+        <div id="grid">
+        <ol>
+            <li><a href="my_onclick.html">onclick</a></li>
+            <li><a href="my_variable.html">variable</a></li>
+            <li><a href="my_tag_control.html">tag control</a></li>
+            <li><a href="my_if.html">if</a></li>
+            <li><a href="my_array_for.html">array, for</a></li>
+            <li><a href="my_function.html">funciton</a></li>
+            <li><a href="my_class.html">class</a></li>
+        </ol>
+        <div id="article">
+        <h2>function</h2>
+        <p>
+            <input type="button" value="함수 실행" onclick="myFunction(5, 11)"><br>
+            <p id="p_id"></p>
+        </p>
+        </div>
+        </div>
+        <input type="button" value="night" onclick="NightDayHanddler(this)">
+    </body>
+</html>
