@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+    <head>
+        <title>1.Color Flipper</title>
+        <meta charset="utf-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="Change_Colors.js"></script>
+        <link rel="stylesheet" href="color_flipper.css">
+    </head>
+
+    <body>
+        <h1>Color Flipper</h1>
+        <div id="text">
+            <p style="color:white;">BackGroundColor : <span style="color:white">white</span></p>
+            <div id="btns">
+                <button id="btn_random" type="button" onclick="Change_Random()">배경 색상 바꾸기</button><br>
+                <div id="btn_colors">
+                    <button type="button" onclick="Change_Color('red')">Red</button>
+                    <button type="button" onclick="Change_Color('orange')">Orange</button>
+                    <button type="button" onclick="Change_Color('yellow')">Yellow</button>
+                    <button type="button" onclick="Change_Color('green')">Green</button>
+                    <button type="button" onclick="Change_Color('Powderblue')">Powderblue</button>
+                    <button type="button" onclick="Change_Color('pink')">Pink</button>
+                    <button type="button" onclick="Change_Color('violet')">Violet</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

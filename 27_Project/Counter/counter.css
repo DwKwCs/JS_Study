@@ -1,0 +1,32 @@
+body {
+    background-color:blanchedalmond;
+}
+h1 {
+    text-align:center;
+}
+#container {
+    text-align:center;
+    margin:100px;
+}
+#container span {
+    font-size:90px;
+}
+#container #btn {
+    margin:50px;
+}
+#container button {
+    margin:10px;
+    font-size:20px;
+}
+#container #minus {
+    background-color:whitesmoke;
+    color:red;
+}
+#container #reset {
+    background-color:whitesmoke;
+    color:black;
+}
+#container #plus {
+    background-color:whitesmoke;
+    color:blue;
+}
