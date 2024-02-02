@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+    <head>
+        <title>addEventListener</title>
+        <meta charset="utf-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="LinkColor.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <h1><a href="Test.html">Test</a></h1>
+        <input type="button" value="night" onclick="NightDayHanddler(this)">
+        <div id="grid">
+            <ol>
+                <li><a href="getElementById.html">getElementById</a></li>
+                <li><a href="addEventListener.html">addEventListener</a></li>
+                <li><a href="forEach.html">forEach</a></li>
+            </ol>
+            <div id="article">
+                <h2>addEventListener()</h2>
+                <button type="button">클릭!</button>
+                <p>this is Tag : p</p>
+            </div>
+        </div>
+        <input type="button" value="night" onclick="NightDayHanddler(this)">
+        <script>
+            function print (self) {
+                $('p').html(self);
+            }
+            function bgc (color) {
+                $('body').css('backgroundColor', color);
+            }
+            document.querySelector('button').addEventListener('click', () => {
+                print('짠!');
+                bgc('pink');
+            });
+        </script>
+    </body>
+</html>

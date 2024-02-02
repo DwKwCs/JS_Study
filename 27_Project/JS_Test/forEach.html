@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+    <head>
+        <title>forEach</title>
+        <meta charset="utf-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="LinkColor.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <h1><a href="Test.html">Test</a></h1>
+        <input type="button" value="night" onclick="NightDayHanddler(this)">
+        <div id="grid">
+            <ol>
+                <li><a href="getElementById.html">getElementById</a></li>
+                <li><a href="addEventListener.html">addEventListener</a></li>
+                <li><a href="forEach.html">forEach</a></li>
+            </ol>
+            <div id="article">
+                <h2>forEach()</h2>
+                <h3>let</h3>
+                <script>
+                    let arr_let = ['apple', 'banana', 'cherry'];
+                    arr_let.push('strowberry');
+                    arr_let.forEach((element, idx) => {
+                        document.write('요소 : '+element+'<br>');
+                        document.write('인덱스 : '+idx+'<br>');
+                    });
+                </script>
+                <h3>const</h3>
+                <script>
+                    const arr_const = ['dog', 'car', 'bear'];
+                    arr_const.push('tuttle');
+                    arr_const.forEach((element, idx) => {
+                        document.write('요소 : '+element+'<br>');
+                        document.write('인덱스 : '+idx+'<br>');
+                    });
+                </script>
+            </div>
+        </div>
+        <input type="button" value="night" onclick="NightDayHanddler(this)">
+    </body>
+</html>
